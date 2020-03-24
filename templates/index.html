@@ -8,19 +8,19 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-    <title>Influenza/COVID checker</title>
+    <title>COVID-19 checker</title>
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <a class="navbar-brand" href="#">Influenza or COVID-19</a>
+        <a class="navbar-brand" href="#"></a>
     </nav>
 
     <div class="container">
-        <h2 class="text-center mt-3">COVID-19 Detector</h2>
+        <h2 class="text-center mt-3">COVID-19 Probability Checker</h2>
         <form action="/" method="POST">
             <div class="form-group">
                 <label for="Age">Age</label>
-                <input type="text" class="form-control" id="Age" name="Age" placeholder="Enter Age in Years">
+                <input type="number" class="form-control" id="Age" name="Age" placeholder="Enter Age in Years" required min="1" max="110">
             </div>
             <div class="form-group">
                 <label for="Gender">Gender</label>
@@ -31,7 +31,7 @@
             </div>
             <div class="form-group">
                 <label for="Temperature">Fever</label>
-                <input type="text" class="form-control" id="Temperature" name="Temperature" placeholder="Enter fever temeperature in degree centigrade">
+                <input type="number" class="form-control" id="Temperature" name="Temperature" placeholder="Enter fever temeperature in degree centigrade" min="20" max="115">
             </div>
             <div class="form-group">
                 <label for="MedicalConditions">Medical Condition</label>
